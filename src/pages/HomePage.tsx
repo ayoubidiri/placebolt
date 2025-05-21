@@ -78,10 +78,21 @@ const HomePage: React.FC = () => {
             // Activities Grid
             sampleActivities.map(activity => (
               <div key={activity.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div className="relative h-48">
+                  <img 
+                    src={activity.media?.images[0]}
+                    alt={activity.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h3 className="text-white font-semibold text-lg">{activity.name}</h3>
+                    <p className="text-white/90 text-sm">
+                      {activity.classification.level1}
+                      {activity.classification.level2 && ` > ${activity.classification.level2}`}
+                    </p>
+                  </div>
+                </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg text-slate-800 mb-2">
-                    {activity.name}
-                  </h3>
                   <p className="text-slate-600 text-sm mb-3">
                     {activity.description}
                   </p>

@@ -67,72 +67,6 @@ export const samplePlaces: Place[] = [
     media: {
       images: ['https://images.pexels.com/photos/76969/central-park-new-york-panorama-76969.jpeg']
     }
-  },
-  {
-    id: 'p4',
-    name: 'Maternité Port-Royal',
-    description: 'A renowned maternity hospital in Paris, specializing in childbirth and women\'s health services.',
-    location: {
-      continent: 'Europe',
-      country: 'France',
-      city: 'Paris',
-      neighborhood: 'Montparnasse',
-      coordinates: {
-        lat: 48.8392,
-        lng: 2.3379
-      }
-    },
-    categories: ['Urban', 'Health'],
-    domains: ['Health', 'Women\'s Health', 'Birth'],
-    accessibility: ['Reservation Required', 'Wheelchair Accessible'],
-    activities: ['Childbirth Classes', 'Medical Consultations', 'Prenatal Care'],
-    media: {
-      images: ['https://images.pexels.com/photos/1250655/pexels-photo-1250655.jpeg']
-    }
-  },
-  {
-    id: 'p5',
-    name: 'Parc des Buttes-Chaumont',
-    description: 'One of the largest and most original parks in Paris, featuring a lake, cliffs, waterfalls, and a temple at the top of a cliff.',
-    location: {
-      continent: 'Europe',
-      country: 'France',
-      city: 'Paris',
-      neighborhood: '19th Arrondissement',
-      coordinates: {
-        lat: 48.8769,
-        lng: 2.3823
-      }
-    },
-    categories: ['Urban', 'Natural'],
-    domains: ['Entertainment', 'Health'],
-    accessibility: ['Free', 'Limited Wheelchair Access'],
-    activities: ['Hiking', 'Picnic', 'Photography', 'Running'],
-    media: {
-      images: ['https://images.pexels.com/photos/158028/belvedere-doric-temple-buttes-chaumont-park-158028.jpeg']
-    }
-  },
-  {
-    id: 'p6',
-    name: 'Camp Nou',
-    description: 'The home stadium of FC Barcelona, one of the largest stadiums in Europe and a temple for football fans.',
-    location: {
-      continent: 'Europe',
-      country: 'Spain',
-      city: 'Barcelona',
-      neighborhood: 'Les Corts',
-      coordinates: {
-        lat: 41.3809,
-        lng: 2.1228
-      }
-    },
-    categories: ['Urban', 'Sport'],
-    domains: ['Entertainment', 'Sport'],
-    accessibility: ['Paid', 'Wheelchair Accessible'],
-    activities: ['Watching Football', 'Stadium Tours', 'Museum Visits'],
-    media: {
-      images: ['https://images.pexels.com/photos/14586974/pexels-photo-14586974.jpeg']
-    }
   }
 ];
 
@@ -159,7 +93,10 @@ export const sampleActivities: Activity[] = [
       max: 120,
       unit: 'minutes'
     },
-    frequency: 'Weekly'
+    frequency: 'Weekly',
+    media: {
+      images: ['https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg']
+    }
   },
   {
     id: 'a2',
@@ -181,7 +118,10 @@ export const sampleActivities: Activity[] = [
       max: 90,
       unit: 'minutes'
     },
-    frequency: 'Daily'
+    frequency: 'Daily',
+    media: {
+      images: ['https://images.pexels.com/photos/917732/pexels-photo-917732.jpeg']
+    }
   },
   {
     id: 'a3',
@@ -204,76 +144,9 @@ export const sampleActivities: Activity[] = [
       max: 4,
       unit: 'hours'
     },
-    frequency: 'Monthly'
-  },
-  {
-    id: 'a4',
-    name: 'Romantic Dinner',
-    description: 'Enjoy a special dinner with your partner at a romantic restaurant or setting.',
-    context: ['Indoor', 'Outdoor', 'Evening'],
-    classification: {
-      level1: 'Romance',
-      level2: 'Dating',
-      level3: 'Dining'
-    },
-    compatiblePlaces: ['Restaurant', 'Rooftop', 'Waterfront', 'Home'],
-    bestTimes: {
-      timeOfDay: ['Evening'],
-      dayOfWeek: ['Weekend'],
-      season: ['All Year']
-    },
-    duration: {
-      min: 2,
-      max: 3,
-      unit: 'hours'
-    },
-    frequency: 'Monthly'
-  },
-  {
-    id: 'a5',
-    name: 'Childbirth Class',
-    description: 'Educational sessions for expectant parents to prepare for childbirth and early parenthood.',
-    context: ['Indoor', 'Educational'],
-    classification: {
-      level1: 'Health',
-      level2: 'Women\'s Health',
-      level3: 'Birth',
-      level4: 'Education'
-    },
-    compatiblePlaces: ['Hospital', 'Health Center', 'Community Center', 'Online'],
-    bestTimes: {
-      timeOfDay: ['Evening', 'Weekend'],
-      dayOfWeek: ['All'],
-      season: ['All Year']
-    },
-    duration: {
-      min: 2,
-      max: 3,
-      unit: 'hours'
-    },
-    frequency: 'Weekly'
-  },
-  {
-    id: 'a6',
-    name: 'Hiking Trip',
-    description: 'Explore nature trails, mountains, or scenic routes by foot.',
-    context: ['Outdoor', 'Nature'],
-    classification: {
-      level1: 'Sport',
-      level2: 'Individual Sports',
-      level3: 'Hiking'
-    },
-    compatiblePlaces: ['Mountain', 'Forest', 'National Park', 'Nature Reserve'],
-    bestTimes: {
-      timeOfDay: ['Morning', 'Afternoon'],
-      dayOfWeek: ['Weekend'],
-      season: ['Spring', 'Summer', 'Fall']
-    },
-    duration: {
-      min: 2,
-      max: 8,
-      unit: 'hours'
-    },
-    frequency: 'Monthly'
+    frequency: 'Monthly',
+    media: {
+      images: ['https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg']
+    }
   }
 ];
